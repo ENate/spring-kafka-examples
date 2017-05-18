@@ -1,4 +1,4 @@
-package de.nath.mysqlMaven;
+package de.packagename.mysqlMaven;
 
 //import java.sql.DriverManager;
 //import java.sql.ResultSet;
