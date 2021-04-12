@@ -1,2 +1,6 @@
-This is an example of a Java EE application together with RESTful webservice. It is basically a demonstration of a CRUD application using Spring,
-Hibernate together with Maven. The view is rendered by JSP, JSF, CSS, HTML.
+
+### Example of kafka spring Application:
+
+This is an example of a springboot application with RESTful webservices. The aim of this application
+is to demonstrate the usefulness of kafka in distributed applications. Several types of
+compatible APIs are combined to achieve a full fledge distributed application.
