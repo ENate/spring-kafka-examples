@@ -1,11 +1,10 @@
+# Example of kafka spring Application:
 
-### Example of kafka spring Application:
+In this example, we demonstrate kafka basic examples using spring boot. Some technology stack used in this program arey:
 
-This is an example of a springboot application with RESTful webservices.
+### Technology stack:
 
-
-#### Technology stack:
-1) kafka
-2) 2)springboot
-3) mysql
-4) spring cloud JPA
+1. kafka
+2. springboot
+3. mysql
+4. spring cloud JPA
