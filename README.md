@@ -1,6 +1,6 @@
 # kafka spring Boot Application
 
-In this example, we demonstrate a basic kafka producer and consumer example using spring boot. It consists of the following technology stack:
+In this example, we demonstrate a basic kafka producer and consumer example using spring boot. To run the example, we need the following technology stack:
 
 1. kafka
 2. springboot
