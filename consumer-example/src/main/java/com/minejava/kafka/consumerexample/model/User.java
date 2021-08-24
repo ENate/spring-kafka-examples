@@ -14,7 +14,7 @@ public class User {
     }
 
     /**
-     * 
+     *
      */
     public User() {
     }
@@ -49,7 +49,7 @@ public class User {
 
     /*
      * (non-Javadoc)
-     * 
+     *
      * @see java.lang.Object#toString()
      */
 
