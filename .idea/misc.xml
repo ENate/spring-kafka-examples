@@ -10,6 +10,18 @@
           <option name="caretOffset" value="0" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/README.md" />
         </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="746" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/consumer-example/src/main/java/com/minejava/kafka/consumerexample/config/KafkaConfiguration.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="305" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.Dockerfile" />
+        </OpenedFileInfo>
       </list>
     </option>
   </component>
