@@ -15,24 +15,28 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="677" />
+          <option name="caretOffset" value="653" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/producer-service/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="445" />
+          <option name="caretOffset" value="1801" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="454" />
+          <option name="caretOffset" value="607" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/consumer-service/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1785" />
+          <option name="caretOffset" value="2544" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/consumer-service/src/main/java/com/minejava/consumerservice/config/KafkaConfiguration.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="937" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/consumer-example/src/main/java/com/minejava/kafka/consumerexample/config/KafkaConfiguration.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1629" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/consumer-service/src/main/java/com/minejava/consumerservice/config/KafkaConfiguration.java" />
+          <option name="caretOffset" value="116" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/kafka-parent/consumer-service/src/test/java/com/minejava/consumerservice/ConsumerServiceApplicationTests.java" />
         </OpenedFileInfo>
       </list>
     </option>
