@@ -4,12 +4,12 @@ public class User {
     // Define user fields
     private String name;
     private String department;
-    private Long Salary;
+    private Long salary;
 
     public User(String name, String department, Long salary) {
         this.name = name;
         this.department = department;
-        Salary = salary;
+        this.salary = salary;
     }
 
     public String getName() {
@@ -29,10 +29,12 @@ public class User {
     }
 
     public Long getSalary() {
-        return Salary;
+        return salary;
     }
 
     public void setSalary(Long salary) {
-        Salary = salary;
+        this.salary = salary;
     }
+
+    
 }

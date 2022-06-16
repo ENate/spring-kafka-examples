@@ -1,6 +1,8 @@
 package com.minejava.consumerservice.listener;
 
 import com.minejava.consumerservice.model.User;
+import com.minejava.consumerservice.model.UserItems;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -16,9 +18,14 @@ public class KafkaConsumer {
         log.info("message consumed: {}", message);
     }
 
-    @KafkaListener(topics = "Kafka_example_json", clientIdPrefix = "group_json", containerFactory = "userKafkaListenerFactory")
+    @KafkaListener(topics = "Kafka_topic_json", clientIdPrefix = "group_json", containerFactory = "userKafkaListenerFactory")
     public void consumerJson(User user) {
         log.info("Consumed JSON message: {}", user);
+    }
+
+    @KafkaListener(topics = "producer_topic_json", clientIdPrefix = "group_json_items", containerFactory = "userKafkaListenerFactoryItems")
+    public void consumerJsonProducer(UserItems userItems) {
+        log.info("Consumed Producer JSON message: {}", userItems);
     }
     
 }

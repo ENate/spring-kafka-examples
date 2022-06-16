@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("kafka")
 public class UserResource {
-    // Serialization is performed on the confid package
+    // Serialization is performed on the config package
     // Define a kafka package
     @Autowired
     private KafkaTemplate<String, User> kafkaTemplate;
 
     // Define a topic
-    private static final String TOPIC = "first_topic";
+    private static final String TOPIC = "producer_topic_json";
 
     @GetMapping("/publish/{name}")
     public String post(@PathVariable("name") final  String name) {
