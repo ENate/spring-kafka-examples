@@ -61,13 +61,13 @@ public class KafkaConfiguration {
 
     @Bean
     public ConsumerFactory<String, UserItems> userConsumerFactoryItems() {
-        Map<String, Object> config = new HashMap<>();
+        Map<String, Object> configItems = new HashMap<>();
 
-        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
-        config.put(ConsumerConfig.GROUP_ID_CONFIG, "group_json_items");
-        config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
-        config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(),
+        configItems.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
+        configItems.put(ConsumerConfig.GROUP_ID_CONFIG, "group_json_items");
+        configItems.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        configItems.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
+        return new DefaultKafkaConsumerFactory<>(configItems, new StringDeserializer(),
                 new JsonDeserializer<>(UserItems.class));
     }
 

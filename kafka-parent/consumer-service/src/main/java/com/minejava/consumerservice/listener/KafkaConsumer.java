@@ -23,7 +23,7 @@ public class KafkaConsumer {
         log.info("Consumed JSON message: {}", user);
     }
 
-    @KafkaListener(topics = "producer_topic_json", clientIdPrefix = "group_json_items", containerFactory = "userKafkaListenerFactoryItems")
+    @KafkaListener(topics = "producer_topic_json000", clientIdPrefix = "group_json_items", containerFactory = "userKafkaListenerFactoryItems")
     public void consumerJsonProducer(UserItems userItems) {
         log.info("Consumed Producer JSON message: {}", userItems);
     }
