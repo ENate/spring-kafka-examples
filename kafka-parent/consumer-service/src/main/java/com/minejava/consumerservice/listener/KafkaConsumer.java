@@ -20,4 +20,5 @@ public class KafkaConsumer {
     public void consumerJson(User user) {
         log.info("Consumed JSON message: {}", user);
     }
+    
 }

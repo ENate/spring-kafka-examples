@@ -36,6 +36,7 @@ public class KafkaConfiguration {
         return factory;
     }
 
+    
     @Bean
     public ConsumerFactory<String, User> userConsumerFactory() {
         Map<String, Object> config = new HashMap<>();
@@ -44,7 +45,8 @@ public class KafkaConfiguration {
         config.put(ConsumerConfig.GROUP_ID_CONFIG, "group_json");
         config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(), new JsonDeserializer<>(User.class));
+        return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(),
+                new JsonDeserializer<>(User.class));
     }
 
     // User consumer factory
@@ -54,4 +56,5 @@ public class KafkaConfiguration {
         factory.setConsumerFactory(userConsumerFactory());
         return factory;
     }
+    
 }
