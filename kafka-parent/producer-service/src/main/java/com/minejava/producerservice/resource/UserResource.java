@@ -38,7 +38,7 @@ public class UserResource {
 
     @PostMapping("/publish/data")
     @ResponseStatus(HttpStatus.CREATED)
-    public void createProduct(@RequestBody User userRequest) {
-        produceService.createProduct(userRequest);
+    public void createUser(@RequestBody User userRequest) {
+        produceService.createUser(userRequest);
     }
 }

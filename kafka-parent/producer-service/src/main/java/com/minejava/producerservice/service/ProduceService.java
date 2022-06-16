@@ -20,7 +20,7 @@ public class ProduceService {
     @Autowired
     private KafkaTemplate<String, User> myKafkaTemplate;
 
-    public void createProduct(User userRequest) {
+    public void createUser(User userRequest) {
         User user = User.builder()
                 .name(userRequest.getName())
                 .department(userRequest.getDepartment())
