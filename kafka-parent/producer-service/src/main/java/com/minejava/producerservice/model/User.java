@@ -1,5 +1,8 @@
 package com.minejava.producerservice.model;
 
+import lombok.Builder;
+
+@Builder
 public class User {
     // Define user fields
     private String name;
