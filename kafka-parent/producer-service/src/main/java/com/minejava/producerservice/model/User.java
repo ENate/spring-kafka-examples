@@ -42,7 +42,12 @@ public class User {
 
     @Override
     public String toString() {
-        return "User [department=" + department + ", name=" + name + ", salary=" + salary + "]";
+        final StringBuffer sb = new StringBuffer("User{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", dept='").append(department).append('\'');
+        sb.append(", salary='").append(salary).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 
     
