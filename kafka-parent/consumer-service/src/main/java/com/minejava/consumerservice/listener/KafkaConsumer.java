@@ -11,13 +11,13 @@ public class KafkaConsumer {
     private Logger log = LoggerFactory.getLogger(KafkaConsumer.class);
 
     // define how to send messages to consumer and specify topics and groups
-    @KafkaListener(topics = "my first topic", clientIdPrefix = "group:Id")
+    @KafkaListener(topics = "my_first_topic", clientIdPrefix = "group_Id")
     public void consumer(String message) {
         log.info("message consumed: {}", message);
     }
 
     @KafkaListener(topics = "Kafka_example_json", clientIdPrefix = "group_json", containerFactory = "userKafkaListenerFactory")
     public void consumerJson(User user) {
-        log.info("Consumed JSOn message: {}", user);
+        log.info("Consumed JSON message: {}", user);
     }
 }

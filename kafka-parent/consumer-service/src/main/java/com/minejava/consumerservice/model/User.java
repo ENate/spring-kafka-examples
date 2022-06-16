@@ -31,9 +31,10 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", department='" + department + '\'' +
-                '}';
+        final StringBuffer sb = new StringBuffer("User{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", dept='").append(department).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
