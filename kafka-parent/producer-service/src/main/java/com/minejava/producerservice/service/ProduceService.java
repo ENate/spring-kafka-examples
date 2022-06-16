@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class ProducerService {
+public class ProduceService {
 
     private static final String TOPIC_BUILDER = "builder_topic_json";
 

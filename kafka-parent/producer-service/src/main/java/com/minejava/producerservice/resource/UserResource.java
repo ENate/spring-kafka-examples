@@ -1,7 +1,7 @@
 package com.minejava.producerservice.resource;
 
 import com.minejava.producerservice.model.User;
-import com.minejava.producerservice.service.ProducerService;
+import com.minejava.producerservice.service.ProduceService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -25,7 +25,7 @@ public class UserResource {
     @Autowired
     private KafkaTemplate<String, User> kafkaTemplate;
 
-    private final ProducerService producerService;
+    private final ProduceService produceService;
 
     // Define a topic
     private static final String TOPIC = "producer_topic_json";
@@ -39,6 +39,6 @@ public class UserResource {
     @PostMapping("/publish/data")
     @ResponseStatus(HttpStatus.CREATED)
     public void createProduct(@RequestBody User userRequest) {
-        producerService.createProduct(userRequest);
+        produceService.createProduct(userRequest);
     }
 }
