@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="util-service" />
+        <module name="user-service" />
         <module name="consumer-service" />
         <module name="producer-service" />
         <module name="collect-services" />
@@ -18,6 +20,8 @@
       <module name="consumer-service" options="-parameters" />
       <module name="kafka-parent" options="" />
       <module name="producer-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="util-service" options="-parameters" />
     </option>
   </component>
 </project>
