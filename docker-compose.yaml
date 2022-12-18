@@ -1,5 +1,16 @@
 version: '3'
 services:
+  rabbitmq:
+    image: library/rabbitmq:3.8.9-management-alpine
+    ports:
+      - 5672:5672
+      - 15672:15672
+    container_name: rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
   zookeeper:
     image: confluentinc/cp-zookeeper:7.0.1
     container_name: zookeeper
@@ -9,7 +20,7 @@ services:
 
   broker:
     image: confluentinc/cp-kafka:7.0.1
-    container_name: broker
+    container_name: kafka
     ports:
     # To learn about configuring Kafka for access across networks see
     # https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/
@@ -18,7 +29,9 @@ services:
       - zookeeper
     environment:
       KAFKA_BROKER_ID: 1
+      KAFKA_ADVERTISED_HOST_NAME: kafka
       KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_ADVERTISED_PORT: 9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
