@@ -37,3 +37,18 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - ~/apps/mongodb:/var/lib/mongodb/data
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=rootuser
+      - MONGO_INITDB_DATABASE=admin
+      #MONGO_DB_USERNAME: mando
+      #MONGO_DB_PASSWORD: mantung
+      #command: --smallfiles --rest

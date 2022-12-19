@@ -28,8 +28,10 @@ public class UserServiceApplication {
 
 		String mongoDbHost = ctx.getEnvironment().getProperty("spring.data.mongodb.host");
 		String mongoDbPort = ctx.getEnvironment().getProperty("spring.data.mongodb.port");
+		String mongoDbUrl = ctx.getEnvironment().getProperty("spring.data.mongodb.url");
 
 		LOG.info("Connected to MongoDB: " + mongoDbHost + ":" + mongoDbPort);
+		LOG.info("connected to uri" + mongoDbUrl);
     }
 
     @Autowired
