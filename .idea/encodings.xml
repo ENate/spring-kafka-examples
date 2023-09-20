@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/collect-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-parent/collect-services/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-parent/consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-parent/producer-service/src/main/java" charset="UTF-8" />
@@ -8,5 +10,10 @@
     <file url="file://$PROJECT_DIR$/kafka-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-parent/user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-parent/util-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/producer-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/util-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

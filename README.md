@@ -1,10 +1,19 @@
-### A kafka spring boot microservices application
-This repository contains a kafka, spring boot application and a multi-module spring cloud stream application. For the spring kafka producer-consumer application, we demonstrate how a loose coupling between services. We define a producer and a consumer in the producer-service and consumer-service respectively.
+### A kafka spring boot microservice application
 
-The second part of the repository consists of a multi-module spring boot microservices application (util-service, user-service and user-composite). The multi-module application demonstrates how to use the functional programming paradigm in implementing a spring kafka streams application (via the spring cloud framework).
+This repository contains two types of spring boot applications
++ consumer- and producer services which can be run together
++ and a multi-module spring cloud stream application. 
 
-The following stack is required to run the application:
+For the spring kafka producer-consumer application, we demonstrate how a loose coupling can be implemented  
+between services (producer- and consumer-service) by using kafka. The producer-service fires an event which is consumed
+by the consumer-service.
 
+The second part of the repository consists of a multi-module spring boot microservice
+application (util-service, user-service and user-composite). The multi-module application 
+demonstrates how to implement a loosely coupled rabbitMQ-Kafka, distributed messaging application
+developed using the cloud streams functional API a (via the spring cloud framework).
+
+### Tech Stack 
 + kafka and spring cloud (kafka streams)
 + spring-boot v.3.1+
 + mysql
@@ -31,7 +40,7 @@ And then change to the directory
 ```
 cd spring-kafka-examples
 ```
-For the purpose of this tutorial, I ran kafka via docker-compose using 
+For the purpose of this tutorial (or dev), I ran kafka via docker-compose using 
 ```
 docker-compose up -d
 ```
