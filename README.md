@@ -66,8 +66,8 @@ The directories consist of the repository consist of the following projects:
 + the `user-service` contains basic CRUD operations for the user-service.
 
 ### Output Notes
-When a call is made such as to create user (via the corresponding endpoint
-provided in the `collect-services`, an event is created and an event registered in kafka. The `collect-services`calls
+When a call is made such as to create a user (via the corresponding endpoint
+provided in the `collect-services`), an event is registered in kafka/rabbitMQ. The `collect-services`calls
 the `ùser-service` using a distributed architecture. By registering the event using the choices defined in the 
 `util-service`, an event bus alerts other services which can serve as consumers. This design pattern takes care of situations whereby
 database updates can be performed in an optimal pattern between microservices. It also enforces the notion of using loose coupling between participating services,
