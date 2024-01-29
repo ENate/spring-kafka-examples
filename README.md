@@ -1,14 +1,14 @@
 ### A kafka spring boot microservice application
 
-This repository contains two types of spring boot applications
+This repo contains two types of spring boot applications:
 + consumer- and producer services which can be run together
-+ and a multi-module spring cloud stream application. 
++ and a multimodule spring cloud stream application. 
 
 For the spring kafka producer-consumer application, we demonstrate how a loose coupling can be implemented  
 between services (producer- and consumer-service) by using kafka. The producer-service fires an event which is consumed
 by the consumer-service.
 
-The second part of the repository consists of a multi-module spring boot microservice
+The second part of the repository consists of a multimodule spring boot microservice
 application (util-service, user-service and user-composite). The multi-module application 
 demonstrates how to implement a loosely coupled rabbitMQ-Kafka, distributed messaging application
 developed using the cloud streams functional API a (via the spring cloud framework).
@@ -27,7 +27,7 @@ developed using the cloud streams functional API a (via the spring cloud framewo
 + kafka
 
 
-### Steps to run the codes
+### Steps to run
 
 Clone the repository using:
 
@@ -52,23 +52,23 @@ To install kafka, you can use the instructions provided on
 ```https://kafka.apache.org/quickstart``, or use an enterprise based kafka.
 or install  ``kafka`` using the instructions on the Kafka homepage. 
 
-### Contents of the repo
+### Contents
 
 The directories consist of the repository consist of the following projects:
 
 + Kafka producer service named ``producer-service`` to produce messages
 + And a consumer service named ``consumer-service`` to consumer messages
 
-### Other Services
-+ A composite named ```collect services``` provides composite implementation 
+### Composing Services
++ A composite service named ```collect services``` provides composite implementation 
  to the ``ùser-`` and `util` services
 + the utils service contains utility classes and methods, while the
 + the `user-service` contains basic CRUD operations for the user-service.
 
-### Output Notes
+### Notes
 When a call is made such as to create a user (via the corresponding endpoint
 provided in the `collect-services`), an event is registered in kafka/rabbitMQ. The `collect-services`calls
-the `ùser-service` using a distributed architecture. By registering the event using the choices defined in the 
+the `ùser-service` by  using a distributed architecture (via kafka). By registering the event using the choices defined in the 
 `util-service`, an event bus alerts other services which can serve as consumers. This design pattern takes care of situations whereby
 database updates can be performed in an optimal pattern between microservices. It also enforces the notion of using loose coupling between participating services,
 and can be easily extended to include spring Application Events. This method also enables the use of SAGA pattern
@@ -79,6 +79,6 @@ Both the
 + producer services can be run together. 
 
 While the collect-services can be run together with user-, util-, consumer-, producer 
-services. Note that ``jdk 17+`` are required to run the examples.
+services. Also note that ``jdk 17+`` (and higher versions) are required to run the examples.
 
 
