@@ -17,7 +17,7 @@ import com.minejava.utilservice.payload.UserPayload;
 public class MessageSupplier {
     private final Logger LOG = LoggerFactory.getLogger(MessageSupplier.class);
 
-    private Boolean produce;
+    private final Boolean produce;
 
     public MessageSupplier(@Value("${spring.cloud.stream.producer.produce}") Boolean produce) {
         this.produce = produce;
@@ -35,7 +35,7 @@ public class MessageSupplier {
     }
 
     private DataEvent<String, UserPayload> getUserPayload() {
-        UserPayload user = new UserPayload("aminat2z2", "amins2zy@gmail.com", "Aminat Okunade");
+        UserPayload user = new UserPayload("Crease", "namodel@gmail.com", "Maestro");
         LOG.info("Logging from gerUserPayLoad function...");
         return new DataEvent<>(EventType.CREATE, null, user);
     }

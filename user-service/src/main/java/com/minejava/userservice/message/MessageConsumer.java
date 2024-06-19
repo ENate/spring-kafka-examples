@@ -47,6 +47,13 @@ public class MessageConsumer {
                             )
                             .subscribe(u -> LOG.info("User Created {}", u));
                     break;
+                case READ:
+                    LOG.info("Working from READ");
+                    break;
+
+                case UPDATE:
+                    LOG.info("Working from READ");
+                    break;
 
                 case DELETE:
                     userPayload = event.getData();

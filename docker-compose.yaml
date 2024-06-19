@@ -3,8 +3,8 @@ services:
   rabbitmq:
     image: library/rabbitmq:3.8.9-management-alpine
     ports:
-      - 5672:5672
-      - 15672:15672
+      - "5672:5672"
+      - "15672:15672"
     container_name: rabbitmq
     healthcheck:
       test: ["CMD", "rabbitmqctl", "status"]
@@ -42,7 +42,7 @@ services:
     image: mongo:latest
     container_name: mongodb
     ports:
-      - 27017:27017
+      - "27017:27017"
     volumes:
       - ~/apps/mongodb:/var/lib/mongodb/data
     environment:
