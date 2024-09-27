@@ -1,3 +1,37 @@
 .idea
 .vscode
 .settings
+.term-project
+.project
+.classpath
+.factorypath
+.settings
+user-service/.settings
+user-service/.project
+user-service/.classpath
+user-service/.factorypath
+user-service/.settings
+# consumer
+consumer-service/.settings
+consumer-service/.project
+consumer-service/.classpath
+consumer-service/.factorypath
+consumer-service/.settings
+# collect
+collect-services/.settings
+collect-services/.project
+collect-services/.classpath
+collect-services/.factorypath
+collect-services/.settings
+# product
+product-service/.settings
+product-service/.project
+product-service/.classpath
+product-service/.factorypath
+product-service/.settings
+# util
+util-service/.settings
+util-service/.project
+util-service/.classpath
+util-service/.factorypath
+util-service/.settings
